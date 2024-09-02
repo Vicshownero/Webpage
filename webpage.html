@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white; 
+        }
+        .container {
+            margin: 0 auto; 
+            padding: 0 0px; 
+        }
+        .header {
+            background-color: green; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+            margin: 0; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        nav {
+            text-align: left; 
+            padding: 5px 20px;
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block; 
+            margin-right: 0px; 
+        }
+        nav ul li a {
+            color: green; 
+            text-decoration: none; 
+        }
+        .section {
+            margin: 20px 20px;
+            padding: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; 
+            margin: 0 20px; 
+        }
+        table {
+            width: 25%;
+            border-collapse: collapse;
+            margin: 0; 
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            margin-top: 10px;
+            padding: 0 5px; 
+        }
+        p {
+          margin: 0 20px; 
+          padding: 10px 0; 
+        }
+        a {
+          margin: 0 20px; 
+          display: inline-block; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <h1>My First Webpage</h1>
+        </div>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#list-section">Webpage Contents</a></li>
+            <li><a href="#table-section">Information Table</a></li>
+            <li><a href="#contact-section">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    
+    <img src="/Untitled.jpg" alt="Description of Image" width="300">
+
+    
+    <p>This is a sample paragraph of text that provides information about the content of the webpage.</p>
+
+    
+     <a href="https://techjaunt.com" target="_blank">Visit TechJaunt</a>
+
+    
+    <div id="list-section" class="section">
+        <h2>Webpage Contents</h2>
+        <ul>
+            <li>Introduction</li>
+            <li>Table of Information</li>
+            <li>Contact Form</li>
+        </ul>
+    </div>
+
+    <div id="table-section" class="section">
+        <h2>Information Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pens</td>
+                    <td>Blue Ink Pens</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Notebooks</td>
+                    <td>Spiral-bound Notebooks</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Markers</td>
+                    <td>Perment Markers</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="contact-section" class="section">
+        <h2>Contact Form</h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            
+            
+            <label>Subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Yes, I want to subscribe</label><br><br>
+            
+            
+            <label for="items">Number of Items:</label>
+            <input type="number" id="items" name="items" min="1" max="100" style="width: 150px;"><br><br>
+            
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
